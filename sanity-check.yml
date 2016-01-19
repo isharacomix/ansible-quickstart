@@ -1,0 +1,7 @@
+---
+- hosts: leaf
+  user: root
+  roles:
+    - common
+  handlers:
+    - include : handlers/main.yml

@@ -1,0 +1,5 @@
+- name: say hello
+  command: "/usr/bin/echo hello"
+
+- name: restart nginx
+  service: name=nginx state=restarted

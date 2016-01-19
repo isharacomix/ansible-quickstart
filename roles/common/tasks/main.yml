@@ -1,0 +1,10 @@
+
+- name: Hello textfile
+  copy: src=hello.txt dest=/home/cumulus/hello.txt
+  notify:
+    - say hello
+
+- name: Hello template
+  template: src=hello.j2 dest=/home/cumulus/hello2.txt
+  notify:
+    - say hello
